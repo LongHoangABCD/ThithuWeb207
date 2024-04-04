@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row d-flex justify-content-center" >
+        <div class="col-md-6 ">
+            <h1 class="text-center">Thông tin điện thoại</h1>
+            <div>
+                <label for="">Mã điện thoại</label>
+                <input type="text" class="form-control" ng-model="inputValue.ma" disabled>
+            </div>
+            <div>
+                <label for="">Tên điện thoại</label>
+                <input type="text" class="form-control" ng-model="inputValue.name" disabled> 
+            </div>
+            <div>
+                <label for="">Hãng điện thoại</label>
+                <select class="form-control"  ng-model="inputValue.hang" disabled>
+                    <option value="Apple">Apple</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Oppo">Oppo</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Giá điện thoại</label>
+                <input type="text" class="form-control" ng-model="inputValue.gia" disabled>
+            </div>
+            <div class="text-center">
+                <button ng-click="onReturn()" class="btn btn-secondary mt-4">Quay lại</button>
+            </div>
+        </div>
+    </div>
+</div>

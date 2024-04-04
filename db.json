@@ -1,0 +1,18 @@
+{
+  "phone": [
+    {
+      "id": 1,
+      "ma": "SP001",
+      "ten": "Iphone 14",
+      "hang": "Apple",
+      "gia": 25000000
+    },
+    {
+      "ma": "rthtr",
+      "ten": "e4",
+      "hang": "Samsung",
+      "gia": "343",
+      "id": 2
+    }
+  ]
+}

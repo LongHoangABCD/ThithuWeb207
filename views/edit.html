@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row d-flex justify-content-center" >
+        <div class="col-md-6 ">
+            <h1 class="text-center">Sửa điện thoại</h1>
+            <div>
+                <label for="">Mã điện thoại</label>
+                <input type="text" class="form-control" ng-model="inputValue.ma" >
+                <small class="text-danger" ng-show="checkEmpty.ma">Không được để trống mã điện thoại</small>
+            </div>
+            <div>
+                <label for="">Tên điện thoại</label>
+                <input type="text" class="form-control" ng-model="inputValue.name" > 
+                <small class="text-danger" ng-show="checkEmpty.ten">Không được để trống tên điện thoại</small>
+            </div>
+            <div>
+                <label for="">Hãng điện thoại</label>
+                <select class="form-control"  ng-model="inputValue.hang" >
+                    <option value="Apple">Apple</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Oppo">Oppo</option>
+                </select>
+                <small class="text-danger" ng-show="checkEmpty.hang">Không được để trống hãng điện thoại</small>
+            </div>
+            <div>
+                <label for="">Giá điện thoại</label>
+                <input type="text" class="form-control" ng-model="inputValue.gia" >
+                <small class="text-danger" ng-show="checkEmpty.gia">Không được để trống giá điện thoại</small> <br>
+                <small class="text-danger" ng-show="checkDuong.gia">Giá điện thoại phải là số dương</small>
+            </div>
+            <div class="text-center">
+                <button ng-click="onUpdate()" class="btn btn-warning mt-4">Sửa</button>
+            </div>
+        </div>
+    </div>
+</div>
