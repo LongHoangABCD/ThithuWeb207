@@ -1,30 +1,30 @@
-<div class="container">
-    <div class="row d-flex justify-content-center" >
-        <div class="col-md-6 ">
-            <h1 class="text-center">Thông tin điện thoại</h1>
-            <div>
-                <label for="">Mã điện thoại</label>
-                <input type="text" class="form-control" ng-model="inputValue.ma" disabled>
-            </div>
-            <div>
-                <label for="">Tên điện thoại</label>
-                <input type="text" class="form-control" ng-model="inputValue.name" disabled> 
-            </div>
-            <div>
-                <label for="">Hãng điện thoại</label>
-                <select class="form-control"  ng-model="inputValue.hang" disabled>
-                    <option value="Apple">Apple</option>
-                    <option value="Samsung">Samsung</option>
-                    <option value="Oppo">Oppo</option>
-                </select>
-            </div>
-            <div>
-                <label for="">Giá điện thoại</label>
-                <input type="text" class="form-control" ng-model="inputValue.gia" disabled>
-            </div>
-            <div class="text-center">
-                <button ng-click="onReturn()" class="btn btn-secondary mt-4">Quay lại</button>
-            </div>
-        </div>
-    </div>
-</div>
+<h1 class="text-center">{{title}}</h1>
+
+<form>
+    <div class="mb-3">
+        <label for="ho_ten" class="form-label">Họ tên</label>
+        <input type="text" ng-model="employee.ho_ten" class="form-control" id="ho_ten" disabled>
+      </div>
+      <div class="mb-3">
+        <label for="sdt" class="form-label">Số điện thoại</label>
+        <input type="text" ng-model="employee.sdt" class="form-control" id="sdt" disabled>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="text" ng-model="employee.email" class="form-control" id="email" disabled>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Chức vụ</label>
+        <select class="form-select" aria-label="Default select example" ng-model="employee.chuc_vu" disabled>
+            <option value="">-Chọn chức vụ-</option>
+            <option value="1">Trưởng phòng</option>
+            <option value="2">Nhân viên</option>
+            <option value="3">Giám đốc</option>
+          </select>
+      </div>
+      <div class="mb-3">
+        <label for="ngay_sinh" class="form-label">Ngày sinh</label>
+        <input type="date" ng-model="employee.ngay_sinh" class="form-control" id="ngay_sinh" disabled>
+      </div>
+      <button class="btn btn-success" ng-click="returnPage()" type="button">Quay lại</button>
+</form>

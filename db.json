@@ -1,18 +1,12 @@
 {
-  "phone": [
+  "employee": [
     {
-      "id": 1,
-      "ma": "SP001",
-      "ten": "Iphone 14",
-      "hang": "Apple",
-      "gia": 25000000
-    },
-    {
-      "ma": "rthtr",
-      "ten": "e4",
-      "hang": "Samsung",
-      "gia": "343",
-      "id": 2
+      "ho_ten": "fgbn222",
+      "sdt": "456456456222",
+      "email": "fgnfgn@gmail.com222",
+      "chuc_vu": "2",
+      "ngay_sinh": "2024-04-12",
+      "id": 7
     }
   ]
 }

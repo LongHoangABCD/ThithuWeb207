@@ -1,0 +1,32 @@
+<h1 class="text-center">{{title}}</h1>
+<a href="#!/employee/add" class="btn btn-success">Thêm nhân viên</a>
+<table class="table table-striped table-hover">
+    <thead>
+        <th>STT</th>
+        <th>Tiêu đề</th>
+        <th>Nội dung</th>
+        <th>Tác giả</th>
+        <th>Thể loại</th>
+        <th>Ngày đăng</th>
+        <th>Thao tác</th>
+    </thead>
+    <tbody ng-repeat="employee in listEmployee">
+        <tr>
+            <td>{{$index+1}}</td>
+            <td>{{employee.ho_ten}}</td>
+            <td>{{employee.sdt}}</td>
+            <td>{{employee.email}}</td>
+            <td ng-if="employee.chuc_vu == 1">Trưởng phòng</td>
+            <td ng-if="employee.chuc_vu == 2">Nhân viên</td>
+            <td ng-if="employee.chuc_vu == 3">Giám đốc</td>
+            <td>{{employee.ngay_sinh}}</td>
+            <td>
+                <a href="#!/edit/employee/{{ employee.id }}"><button class="btn btn-warning" type="button">Sửa</button></a>
+
+                <button class="btn btn-danger" type="button" ng-click="deleteEmployee(employee.id)">Xóa</button>
+
+                <a href="#!/detail/employee/{{ employee.id }}"><button class="btn btn-info" type="button">Chi tiết</button></a>
+            </td>
+        </tr>
+    </tbody>
+</table>

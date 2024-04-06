@@ -1,6 +1,6 @@
 <h1 class="text-center">{{title}}</h1>
 
-<form ng-submit="addEmployee()">
+<form ng-submit="updateEmployee()">
     <div class="mb-3">
         <label for="ho_ten" class="form-label">Họ tên</label>
         <input type="text" ng-model="employee.ho_ten" class="form-control" id="ho_ten">
@@ -28,8 +28,8 @@
       </div>
       <div class="mb-3">
         <label for="ngay_sinh" class="form-label">Ngày sinh</label>
-        <input type="date" ng-model="employee.ngay_sinh" class="form-control" id="ngay_sinh">
+        <input type="date"  ng-model="employee.ngay_sinh" class="form-control" id="ngay_sinh">
         <span ng-if="validate.ngay_sinh" class="text-danger">{{validate.ngay_sinh}}</span>
       </div>
-      <button class="btn btn-success" type="submit">Thêm nhân viên</button>
+      <button class="btn btn-warning" type="submit">Sửa nhân viên</button>
 </form>
